@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Survey form
+    </title>
+    <style>
+        button{
+                background-color: beige;
+                color:black;
+                padding : 10px 10px;
+                border-radius: 25px;
+                font-style: italic;
+                border-color: rgb(239, 193, 137);
+            }
+        button:hover{
+                opacity:0.8;
+                color:indianred;
+            }    
+    </style>
+    </head>
+    <body style="background-color: bisque;">
+        <form action="thankyou.html" target="_blank">
+            <fieldset  body style="background-color: rgb(252, 232, 236);">
+                <legend align="center">
+                    <strong>SURVEY FORM</strong>
+                </legend>
+                <center>
+                <li><label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your Name" required><br><br>
+                <li><label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your Email" required><br><br>
+                <li><label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age" required><br><br>
+                <li><label for="password">Password:</label>
+                <input type="password" id="password" required><br><br>
+                <li><label for="role">Which option best describe your current Role?</label>
+                <select id="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="employee">Employee</option>
+                    <option value="manager">Manager</option>
+                </select><br><br>
+                <li><label for="recommendation">How likely is that you would Recommend this course to a friend?</label>
+                    <br><input type="radio" name="options" value="definetly">
+                        Definetly
+                    <br><input type="radio" name="options" value="maybe">
+                        Maybe
+                    <br><input type="radio" name="options" value="not sure">
+                        Not sure
+                <br><br><li><label for="liking">What do you like most in this course?</label>
+                <input type="text" id="liking" list="liking-list" placeholder="Select an option">
+                    <datalist id="liking-list">
+                        <option value="Coding">
+                        <option value="Algorithms">
+                        <option value="Analyzing"> 
+                        <option value="Group tasks"> 
+                    </datalist><br><br>
+                <li>    <label for="improvement">Things that should be improved in the future<br>(Check all that apply)</label>
+                    <br><label for="checkbox">
+                        <input type="checkbox" value="yes">
+                        Front-end projects
+                    </label>
+                    <br><label for="checkbox">
+                        <input type="checkbox" value="yes">
+                        Back-end projects
+                    </label>
+                    <br><label for="checkbox">
+                        <input type="checkbox" value="yes">
+                        Data Visualization
+                    </label><br><br>
+                    <button type="submit">Submit</button>
+                <button type="reset">Reset Form</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
